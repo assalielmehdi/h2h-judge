@@ -1,0 +1,14 @@
+.login .row {
+  height: 100vh;
+}
+
+.login .card {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.login .card,
+.login input,
+.login button {
+  border-radius: 0;
+}
