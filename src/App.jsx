@@ -14,7 +14,6 @@ class App extends React.Component {
     this.setState((state) => ({
       theme: state.theme === "light" ? "dark" : "light",
     }));
-    console.log(this.state.theme);
   };
 
   render = () => (

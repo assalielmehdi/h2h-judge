@@ -1,7 +1,13 @@
+html,
+body {
+  font-family: "Alegreya", serif;
+  font-family: "Alegreya Sans", sans-serif;
+}
+
 .toggle-switch {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  text-align: right;
+  height: 50px;
+  padding-right: 10px;
 }
 
 .toggle-switch-light {
@@ -12,6 +18,15 @@
 .toggle-switch-dark {
   background-color: rgb(32, 32, 32) !important;
   color: white !important;
+}
+
+.toggle-switch i {
+  position: relative;
+}
+
+.toggle-switch label,
+.toggle-switch i {
+  top: 30%;
 }
 
 /* -- Toggle switch properties -- */

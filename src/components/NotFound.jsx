@@ -1,9 +1,12 @@
 import React from "react";
+import "../css/NotFound.css";
 
-class NotFound extends React.Component {
-  render() {
-    return <h2>404 - Not Found.</h2>
-  }
-}
+const NotFound = (props) => (
+  <div className={`container-fluid not-found not-found-${props.theme}`}>
+    <div className="row">
+      <h1 className="not-found-content">404 - Not Found</h1>
+    </div>
+  </div>
+);
 
 export default NotFound;
