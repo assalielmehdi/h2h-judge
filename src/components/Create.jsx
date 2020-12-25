@@ -42,6 +42,7 @@ class Create extends React.Component {
             type="text"
             className="form-control"
             id="user-name"
+            value={this.state.user1Name}
             onChange={(event) =>
               this.setState({ user1Name: event.target.value })
             }
@@ -55,6 +56,7 @@ class Create extends React.Component {
             type="text"
             className="form-control"
             id="user-email"
+            value={this.state.user1Email}
             onChange={(event) =>
               this.setState({ user1Email: event.target.value })
             }
@@ -68,6 +70,7 @@ class Create extends React.Component {
             type="password"
             className="form-control"
             id="user-password"
+            value={this.state.user1Password}
             onChange={(event) =>
               this.setState({ user1Password: event.target.value })
             }
@@ -88,6 +91,7 @@ class Create extends React.Component {
             type="text"
             className="form-control"
             id="user-name"
+            value={this.state.user2Name}
             onChange={(event) =>
               this.setState({ user2Name: event.target.value })
             }
@@ -101,6 +105,7 @@ class Create extends React.Component {
             type="text"
             className="form-control"
             id="user-email"
+            value={this.state.user2Email}
             onChange={(event) =>
               this.setState({ user2Email: event.target.value })
             }
@@ -114,13 +119,14 @@ class Create extends React.Component {
             type="password"
             className="form-control"
             id="user-password"
+            value={this.state.user2Password}
             onChange={(event) =>
               this.setState({ user2Password: event.target.value })
             }
           />
         </div>
 
-        <button className="btn btn-outline-primary">Create</button>
+        <button className="btn">Create</button>
       </React.Fragment>
     );
   };
@@ -135,6 +141,7 @@ class Create extends React.Component {
           type="text"
           className="form-control"
           id="matchup-name"
+          value={this.state.matchupName}
           onChange={(event) =>
             this.setState({ matchupName: event.target.value })
           }
@@ -145,7 +152,7 @@ class Create extends React.Component {
     ];
 
     return (
-      <div className="container-md create">
+      <div className={`container-fluid create create-${this.props.theme}`}>
         <div className="row">
           <div className="col-1 col-sm-2 col-xl-3" />
           <div className="col-10 col-sm-8 col-xl-6">

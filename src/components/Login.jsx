@@ -17,7 +17,7 @@ class Login extends React.Component {
   };
 
   render = () => (
-    <div className="container-md login">
+    <div className={`container-fluid login login-${this.props.theme}`}>
       <div className="row">
         <div className="col-1 col-sm-2 col-xl-3" />
         <div className="col-10 col-sm-8 col-xl-6">
@@ -34,6 +34,7 @@ class Login extends React.Component {
                     type="text"
                     className="form-control"
                     id="username"
+                    value={this.state.username}
                     onChange={(event) =>
                       this.setState({ username: event.target.value })
                     }
@@ -48,13 +49,14 @@ class Login extends React.Component {
                     type="password"
                     className="form-control"
                     id="password"
+                    value={this.state.password}
                     onChange={(event) =>
                       this.setState({ password: event.target.value })
                     }
                   />
                 </div>
 
-                <button className="btn btn-outline-secondary">Login</button>
+                <button className="btn">Login</button>
               </form>
             </div>
           </div>

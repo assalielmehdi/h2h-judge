@@ -5,25 +5,23 @@ import Login from "./Login";
 import Create from "./Create";
 
 class Routes extends React.Component {
-  render() {
-    return (
-      <Router>
-        <Switch>
-          <Route exact path="/login">
-            <Login />
-          </Route>
+  render = () => (
+    <Router>
+      <Switch>
+        <Route exact path="/login">
+          <Login theme={this.props.theme} />
+        </Route>
 
-          <Route exact path="/create">
-            <Create />
-          </Route>
+        <Route exact path="/create">
+          <Create theme={this.props.theme} />
+        </Route>
 
-          <Route>
-            <NotFound />
-          </Route>
-        </Switch>
-      </Router>
-    );
-  }
+        <Route>
+          <NotFound theme={this.props.theme} />
+        </Route>
+      </Switch>
+    </Router>
+  );
 }
 
 export default Routes;

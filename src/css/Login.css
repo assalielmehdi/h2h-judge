@@ -1,4 +1,7 @@
-.login .row {
+/* -- Common properties -- */
+
+.login .row,
+.login {
   height: 100vh;
 }
 
@@ -12,3 +15,29 @@
 .login button {
   border-radius: 0;
 }
+
+.login button:hover {
+  opacity: 0.65;
+}
+
+/* ----------------------- */
+
+/* -- Light theme properties -- */
+
+.login-light * {
+  background-color: rgb(255, 255, 255) !important;
+  color: rgb(32, 32, 32) !important;
+  border-color: rgb(32, 32, 32) !important;
+}
+
+/* ----------------------- */
+
+/* -- Dark theme properties -- */
+
+.login-dark * {
+  background-color: rgb(32, 32, 32) !important;
+  color: rgb(255, 255, 255) !important;
+  border-color: white !important;
+}
+
+/* ----------------------- */
