@@ -1,0 +1,44 @@
+/* -- Common properties -- */
+
+.matchups .row,
+.matchups {
+  height: calc(100vh - 50px);
+}
+
+.matchups .bolt-icon {
+  color: gold !important;
+  transform: rotate(30deg);
+}
+
+.matchups .card,
+.matchups .col {
+  height: 160px !important;
+}
+
+.matchups .card {
+  border-radius: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* ----------------------- */
+
+/* -- Light theme properties -- */
+
+.matchups-light * {
+  background-color: rgb(255, 255, 255) !important;
+  color: rgb(32, 32, 32) !important;
+  border-color: rgb(32, 32, 32) !important;
+}
+
+/* ----------------------- */
+
+/* -- Dark theme properties -- */
+
+.matchups-dark * {
+  background-color: rgb(32, 32, 32) !important;
+  color: rgb(255, 255, 255) !important;
+  border-color: white !important;
+}
+
+/* ----------------------- */
