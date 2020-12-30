@@ -1,3 +1,22 @@
-/node_modules
+.vscode
+.idea
+*.iws
+*.iml
+*.ipr
 
-/build
+ui/node_modules
+ui/build
+ui/.eslintcache
+ui/.vscode
+ui/.idea
+ui/*.iws
+ui/*.iml
+ui/*.ipr
+
+api/.mvn
+api/target/
+api/.vscode
+api/.idea
+api/*.iws
+api/*.iml
+api/*.ipr
